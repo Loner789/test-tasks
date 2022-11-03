@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test task</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <section class="search-block" aria-label="Раздел поиска.">
+        <form class="search-form" name="search-form">
+            <input type="search" class="search-form__input" name="title" placeholder="Введите текст..." minlength="2"
+                maxlength="35">
+            <input type="submit" value="Найти" class="search-form__button">
+        </form>
+    </section>
+    <section class="cards-container" aria-label="Карточки.">
+    </section>
+
+    <!-- CARD TEMPLATE -->
+    <template id="card-template">
+        <div class="card">
+            <h2 class="card__title"></h2>
+            <p class="card__text"></p>
+            <label for="theme" class="card__checkbox-label">
+                <input type="checkbox" id="theme" name="#" class="card__checkbox" />
+                <span class="card__checkbox-cover"></span>
+            </label>
+        </div>
+    </template>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
