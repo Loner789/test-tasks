@@ -22,7 +22,7 @@ function createCard(data) {
   cardElement.querySelector('.card__title').textContent = title;
   cardElement.querySelector('.card__text').textContent = body;
 
-  cardElement.addEventListener('click', (e) => {
+  cardElement.querySelector('.card__checkbox').addEventListener('click', (e) => {
     toggleTheme(e.target);
   });
 
